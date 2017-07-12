@@ -11,7 +11,7 @@
 
 1. 下载安装 Sublime
 
-    https://www.sublimetext.com/3，不再敖述，下一步就行。
+    下载下来下一步就行。
 
 2. 安装插件管理器 Package Control
 
@@ -23,7 +23,7 @@
 
     * 源码包安装：
     由于 http://packagecontrol.io/ 国内访问一直很慢，所以上面的方法很可能失败，这时可以下载包进行安装。
-    下载包 [Package Control.sublime-package](https://github.com/wilon/sublime/raw/master/packages/Package%20Control.sublime-package)，放到目录`[SublimeText目录]/Installed Packages/`（[目录参考](#目录参考)）下，重启就OK。
+    下载此包 [Package Control.sublime-package](https://github.com/wilon/sublime/raw/master/packages/Package%20Control.sublime-package)，放到目录`[SublimeText目录]/Installed Packages/`（[目录参考](#目录参考)）下，重启就OK。
 
 ----
 ### 目录参考
