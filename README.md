@@ -22,11 +22,12 @@
     ```
 
     * 源码包安装：
-        由于 http://packagecontrol.io/ 国内访问一直很慢，所以上面的方法很可能失败，这时可以下载包进行安装。
-        下载包 [Package Control.sublime-package](https://github.com/wilon/sublime/raw/master/packages/Package Control.sublime-package)，放到目录`[SublimeText目录]/Installed Packages/`[^directory]  下，重启就OK。
+    由于 http://packagecontrol.io/ 国内访问一直很慢，所以上面的方法很可能失败，这时可以下载包进行安装。
+    下载包 [Package Control.sublime-package](https://github.com/wilon/sublime/raw/master/packages/Package%20Control.sublime-package)，放到目录`[SublimeText目录]/Installed Packages/`（[目录参考](#目录参考)）下，重启就OK。
 
 ----
-[^directory]: SublimeText目录，即``` Preferences -> Browse Packages ```所打开的位置的上一级目录
+### 目录参考
+SublimeText目录，即``` Preferences -> Browse Packages ```所打开的位置的上一级目录
 ```
  --- SublimeText目录
   | -- Backup
