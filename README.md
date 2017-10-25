@@ -26,24 +26,30 @@
 
 ## 常见问题
 
-- Package Control 安装失败怎么办？
+##### Package Control 安装失败怎么办？
+
     请选择 [源码包安装](https://github.com/wilon/sublime/blob/master/PackageControl.md#安装-package-control)
 
-- 如何安装主题？ 如何安装插件？ 如何安装包？
+##### 如何安装主题？ 如何安装插件？ 如何安装包？
+
     [请使用 Package Control](https://github.com/wilon/sublime/blob/master/PackageControl.md#package-control)，`Ctrl (Command)+Shift+P` -> `Package Control: Install Package` -> 包名 -> 确认
     其他安装方法1. 若是.sublime-package包文件，放到`${packages}/../Installed Packages/`下即可
     其他安装方法2. 若是.py源码文件，放到`${packages}/`下即可
 
-- Package Control 包列表加载失败或太慢如何解决？
+##### Package Control 包列表加载失败或太慢如何解决？
+
     [安装包失败或太慢解决办法](https://github.com/wilon/sublime/blob/master/PackageControl.md#package-control-安装插件失败或太慢解决办法)
 
-- 如何汉化？
+##### 如何汉化？
+
     安装包 `ChineseLocalizations` 即可
 
-- Windows 右键没有`用Sublime Text打开`的菜单如何解决？
+##### Windows 右键没有`用Sublime Text打开`的菜单如何解决？
+
     下载 [右键菜单工具](https://github.com/wilon/sublime/raw/master/download/win_right_click_menu.bat)，放到**sublime_text.exe**同级目录下，双击运行，按提示运行即可
 
-- OSX 命令行Terminal如何调用Sublime？
+##### OSX 命令行Terminal如何调用Sublime？
+
     在Terminal输入如下代码：
     `ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin`
     即可用`subl somefile/dir` 调用

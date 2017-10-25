@@ -1,0 +1,40 @@
+branches:
+  only:
+    - master
+os:
+  - linux
+
+language: shell
+
+dist: trusty
+
+sudo: required
+
+before_script:
+  - chmod +x ./download/update.sh
+  - git config --global user.name "Travis CI"
+  - git config --global user.email "travis@travis-ci.org"
+
+env:
+ global:
+   - GH_REF: github.com/wilon/sublime.git
+
+script:
+  # 设置git
+  - git remote set-url origin https://${GH_TOKEN}@${GH_REF}
+  - git checkout master
+  # 更新文件，没有 '<travis@travis-ci.org>' 的提交才更新一些文件，避免无限update
+  - git show | grep '<travis@travis-ci.org>' || ./download/update.sh
+
+after_script:
+  # 提交
+  - git add .
+  - git commit -m "Travis CI Auto Download." &
+  - git push --force origin master
+
+notifications:
+  email:
+    recipients:
+      - wilonx@163.com
+    on_success: never
+    on_failure: never
